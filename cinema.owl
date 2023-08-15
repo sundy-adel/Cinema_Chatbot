@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2023/6/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2023/6/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2023/6/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-2" IRI="http://www.semanticweb.org/lenovo/ontologies/2023/6/untitled-ontology-2#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciinema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romantic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#popcorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ticket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showing_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cinemaLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cinemaName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cinemaTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movieActors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movieCategory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#movieName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_Plaza_Cinema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#about_my_father"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#barbie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#black_adam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#caramel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cheese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chooclate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elemeintanal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#family"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#five_feet_apart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#offline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#super_mario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#the_little_mermaid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vip"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animation"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funny"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romantic"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Action"/>
+        <Class IRI="#Animation"/>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Funny"/>
+        <Class IRI="#Romantic"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Ciinema"/>
+        <NamedIndividual IRI="#Green_Plaza_Cinema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Funny"/>
+        <NamedIndividual IRI="#about_my_father"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Funny"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#about_my_father"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Drama"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Funny"/>
+        <NamedIndividual IRI="#barbie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Funny"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#barbie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#black_adam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#black_adam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#popcorn"/>
+        <NamedIndividual IRI="#butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#popcorn"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#popcorn"/>
+        <NamedIndividual IRI="#caramel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#popcorn"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#caramel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#popcorn"/>
+        <NamedIndividual IRI="#cheese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#popcorn"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#cheese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#popcorn"/>
+        <NamedIndividual IRI="#chooclate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#popcorn"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#chooclate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animation"/>
+        <NamedIndividual IRI="#elemeintanal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Animation"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#elemeintanal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#family"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Drama"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#family"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#fast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#fast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Romantic"/>
+        <NamedIndividual IRI="#five_feet_apart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Romantic"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#five_feet_apart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ticket"/>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#ticket"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#normal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#reservation"/>
+        <NamedIndividual IRI="#offline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#reservation"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#offline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#reservation"/>
+        <NamedIndividual IRI="#online"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#reservation"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#online"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#popcorn"/>
+        <NamedIndividual IRI="#salt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#popcorn"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#salt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animation"/>
+        <NamedIndividual IRI="#super_mario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Animation"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#super_mario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Romantic"/>
+        <NamedIndividual IRI="#the_little_mermaid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_category"/>
+            <Class IRI="#Romantic"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#the_little_mermaid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ticket"/>
+        <NamedIndividual IRI="#vip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showing_at"/>
+            <Class IRI="#ticket"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#vip"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinemaLocation"/>
+        <NamedIndividual IRI="#Green_Plaza_Cinema"/>
+        <Literal xml:lang="en">Alexandria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinemaName"/>
+        <NamedIndividual IRI="#Green_Plaza_Cinema"/>
+        <Literal xml:lang="en">Green Plaza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinemaTime"/>
+        <NamedIndividual IRI="#Green_Plaza_Cinema"/>
+        <Literal xml:lang="en">9am - 12pm</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_category"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showing_at"/>
+        <Class IRI="#Ciinema"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cinemaLocation"/>
+        <Class IRI="#Ciinema"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cinemaName"/>
+        <Class IRI="#Ciinema"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cinemaTime"/>
+        <Class IRI="#Ciinema"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#cinemaLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cinemaName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cinemaTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movieActors"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movieCategory"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#movieName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Category</IRI>
+        <Literal xml:lang="en">This class denotes the different categories of the movie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ciinema</IRI>
+        <Literal xml:lang="en">This class denotes general information about the cinema</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
